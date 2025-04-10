@@ -12,7 +12,11 @@ export default function LandingPage() {
         resizeMode="contain" // Ensures the logo is resized properly
       />
       <Text style={styles.title}>Welcome to DailyDose</Text>
-      <Button title="Order Now" onPress={() => router.push("./menu")} />
+      <Button
+        title="Order Now"
+        onPress={() => router.push("./menu")}
+        color="#FF6347"
+      />
     </View>
   );
 }

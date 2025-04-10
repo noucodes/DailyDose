@@ -19,6 +19,7 @@ export default function MenuPage() {
             <Text style={styles.itemStock}>Stock: {item.stock}</Text>
 
             <Button
+              color="#FF6347"
               title={item.stock === 0 ? "Out of Stock" : "Add to Cart"}
               onPress={() => addToCart(item)}
               disabled={item.stock === 0}
